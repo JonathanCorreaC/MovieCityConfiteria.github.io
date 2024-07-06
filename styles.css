@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  background-color: #f02d2d;
+  color: antiquewhite;
+}
+
+img {
+  max-width: 250px;
+  max-height: 150px;
+  margin-top: 10px;
+  border-radius: 30px;
+  opacity: 0.8;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.arepas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.arepas > * {
+  flex: 1 1;
+}
+
+.arepa {
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  min-width: 310px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.arepa:hover {
+  transform: scale(1.1);
+}
+
+.arepa figcaption {
+  padding: 1em;
+}
+
+
+/* Estilo base para el input */
+input {
+  /* display: block; */
+  max-width: 5px; /* Puedes ajustar este valor según tus necesidades */
+  height: 40px; /* Puedes ajustar este valor según tus necesidades */
+ 
+  border: 5px solid black; /* Elimina el borde para un diseño más limpio */
+  border-radius: 30px;
+
+  font-size: 20px;
+
+}
+
+.texthijo input {
+  width: 110px;
+  max-width: 300px;
+  height: 40px;
+  background-color: #dad431;
+  border: 5px solid floralwhite;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* Centra el input horizontalmente */
+  color: rgb(10, 10, 10);
+  text-align: center;
+}
+input #calc{
+  background-color: #dad431;
+}
+
+button{
+  background-color: rgb(45, 179, 121);
+  padding: 10px;
+  border-radius: 5px;
+  color: azure;
+}

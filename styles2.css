@@ -1,0 +1,90 @@
+
+
+
+/* Estilos de la barra de navegación */
+.navegacion {
+    width: 100%;
+    padding-bottom: 2px;
+    
+}
+
+.navegacion nav {
+    max-width: 100%;
+    background: #2D3447;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.navegacion nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap; /* Añadido para que los elementos se envuelvan en pantallas pequeñas */
+    padding: 10x;
+}
+
+.navegacion nav ul li {
+    position: relative;
+    flex-grow: 1; /* Añadido para que los elementos ocupen todo el ancho disponible */
+    flex-basis: 0; /* Añadido para que los elementos ocupen todo el ancho disponible */
+    max-width: 100%; /* Añadido para manejar mejor el ancho en pantallas pequeñas */
+}
+
+.navegacion nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navegacion nav ul li a span {
+    font-size: 20px;
+    position: absolute;
+    bottom: -8px;
+    display: none;
+}
+
+.navegacion nav ul li:hover span {
+    display: block;
+}
+
+.navegacion nav ul li .submenu {
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+.navegacion nav ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.navegacion nav ul li .submenu .submenu-items {
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion nav ul li .submenu .submenu-items p {
+    font-weight: 600;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navegacion nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .navegacion nav ul li {
+        width: 100%;
+    }
+}
