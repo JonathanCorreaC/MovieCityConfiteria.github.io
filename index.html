@@ -59,6 +59,15 @@
   <label for="">Especifica la cantidad de tu compra:</label>
   <input type="number" id="cantidadInput" placeholder="Cant." min="1" max="99" maxlength="2">
  </section>
+   <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Pa42iGTPrwh7N1oizdaHCbj"
+  publishable-key="pk_test_51OKqGwGTPrwh7N1o5TiNg4cjT3UnrXigVX79PP8DGeKXIHVJqVy1wbaEPyUTY1JSzTl3DLcbZldG7xGOnZKUwyoY00S3A2ZeKl"
+>
+</stripe-buy-button>
 <section class="arepas" id="arepas"></section>
 
 <template id="arepa-template">
